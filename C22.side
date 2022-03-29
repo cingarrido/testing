@@ -1,0 +1,126 @@
+{
+  "id": "870cac68-fae4-4453-8f5d-16fc6dce2c91",
+  "version": "2.0",
+  "name": "C22 Team 2",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "7dab5b8c-d9c9-4a73-aacf-7a51f20e1a63",
+    "name": "Youtube Digital House",
+    "commands": [{
+      "id": "81d9a63b-3336-4d0f-a39e-6f060626abbf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "333915e0-5dc8-4a3f-a290-fba6bb76c379",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a1db1b-1a0b-44d6-b96c-71c6fda9a898",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Digital House"
+    }, {
+      "id": "d3618fb5-0b66-45b3-8a60-a870bb1295e0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f3e11d1f-4c95-498f-93f8-5798e81f45dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.channel-link > #avatar",
+      "targets": [
+        ["css=.channel-link > #avatar", "css:finder"],
+        ["xpath=//div[@id='avatar']", "xpath:attributes"],
+        ["xpath=//div[@id='avatar-section']/a/div", "xpath:idRelative"],
+        ["xpath=//ytd-channel-renderer/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "846f5a83-097d-4d6a-8f6a-d41988458625",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f090452c-e91d-4c22-833c-adb6605dcd83",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d0dcc13-a197-4a36-b736-b9b0e1c816c8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44dfec14-3332-4773-82f5-1a35c1873fcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#inner-header-container > #meta",
+      "targets": [
+        ["css=#inner-header-container > #meta", "css:finder"],
+        ["xpath=(//div[@id='meta'])[57]", "xpath:attributes"],
+        ["xpath=//div[@id='inner-header-container']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "200ada93-171e-4842-91e3-ad6377a3385e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01884347-f24e-4533-a34a-674e1c3651d4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "37931b54-14f6-4fbd-be50-565ec0844282",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7dab5b8c-d9c9-4a73-aacf-7a51f20e1a63"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "8ae59f14-ab66-451d-a7d6-dd118996e9cf",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUT",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberTest\": 462463,\r\n    \"location\": \"Kings Landing\",\r\n    \"isAlive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character/qiVBfc70I25L",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"qiVBfc70I25L"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "HOALSLSAL",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "BLABLABLA",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restool-sample-app.herokuapp.com/api/character/Ww7FBW2pcmA0",
+					"protocol": "https",
+					"host": [
+						"restool-sample-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"character",
+						"Ww7FBW2pcmA0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "a2d16db3-e700-4e50-b6a5-6db6ed2eb821",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "36ace62f-0356-44fc-90f7-a20f8ed194b1",
+    "name": "G7 clase 22 test1",
+    "commands": [{
+      "id": "60548df7-9a57-4364-95d8-5992b49b3270",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed41e5da-4796-45c0-9bf5-479b2962f4c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x685",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1703199-7354-428e-9f0a-ad06ba7bdd14",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1d04409-0acf-4698-adb3-b1d7558c1c2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "digital house"
+    }, {
+      "id": "e88e454e-da18-4fde-a41d-38ba4f47fff8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1d4e5c3e-050a-42bb-a25d-a1ba88afe0ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(1) > #contents > .style-scope > #root-container #title",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #contents > .style-scope > #root-container #title", "css:finder"],
+        ["xpath=//h3[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/h3", "xpath:idRelative"],
+        ["xpath=//ytd-promoted-sparkles-text-search-renderer/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' Digital House - Enseñanza Innovadora')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6109",
+      "windowTimeout": 2000
+    }, {
+      "id": "48e6fd3b-8795-4819-bb77-0d9acc39fe5e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6109}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1c4d1e67-65ea-469d-bb6b-856f9664b38b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36ace62f-0356-44fc-90f7-a20f8ed194b1"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

@@ -1,0 +1,7 @@
+Metodo GET: Despegar.com
+
+https://www.despegar.com.ar/suggestions?locale=es-AR&profile=sbox-flights&hint=vene
+
+Metodo POST: Playground
+
+https://playground-course-api.digitalhouse.com/v1/api/auth/native
